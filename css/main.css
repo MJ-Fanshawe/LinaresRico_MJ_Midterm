@@ -1,0 +1,85 @@
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #efefef;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 0,1fr);
+    gap: 20px;
+}
+
+header {
+    display:grid;
+    grid-column: 1/-1; 
+    background-color: #FDBA43;
+    /* shows nav an logo next to the other -same element same column */
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(12, 0,1fr);
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.box2 {
+    order: -1; 
+    /* moves logo at the front of nav */
+}
+
+.box1 {
+    grid-column: 6/-1;
+}
+
+.box3 {
+    grid-column: 1/-1;
+}
+
+.box4 {
+    grid-column: 1/5;
+}
+
+.box5 {
+    grid-column: 5/9;
+}
+
+.box6 {
+    grid-column: 9/-1;
+}
+
+.box7 {
+    grid-column: 1/7;
+}
+
+.box8 {
+    grid-column: 7/-1;
+}
+
+.box9 {
+    grid-column: 1/-1;
+}
+
+.box {
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
