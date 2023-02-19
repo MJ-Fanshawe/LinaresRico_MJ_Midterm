@@ -1,85 +1,73 @@
+/* 
+
+      CSS Guide
+
+      1. General Styles
+      2. Grid
+      3. Header
+      4. Main Hero
+      5. About
+      6. Product-con
+      7. Ad img
+      8. Footer
+
+      9. Our Story page
+
+*/
+
+
 
 .hidden {
     display: none;
 }
 
 body {
-    margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 2. ---Grid--- */
+
+.grid-con {
+	display: grid;
+	padding-left: 15px;
+	padding-right: 15px;
+	grid-template-columns: repeat(12, 60px);
+	grid-column-gap: 60px;
 }
 
 .wrapper {
-    width: 1200px;
     margin: 0 auto;
-    background-color: #efefef;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 0,1fr);
     gap: 20px;
+    padding: 124px;
+    padding-top: 30px;
+    background-image: url(../images/bg.png);
 }
 
 header {
     display:grid;
     grid-column: 1/-1; 
-    background-color: #FDBA43;
-    /* shows nav an logo next to the other -same element same column */
+    background-color: #ffffff;
+    border-radius: 400px;
+    height: 100px;
 }
 
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(12, 0,1fr);
-    justify-content: center;
-    justify-items: center;
-    list-style-type: none;
+nav {
+    grid-column: 4/-1;
     margin: 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: rgb(222, 72, 72);
 }
 
-.box2 {
-    order: -1; 
-    /* moves logo at the front of nav */
+.main-logo {
+    display: grid;
+    grid-column: 1/1;
 }
 
-.box1 {
-    grid-column: 6/-1;
-}
-
-.box3 {
-    grid-column: 1/-1;
-}
-
-.box4 {
-    grid-column: 1/5;
-}
-
-.box5 {
-    grid-column: 5/9;
-}
-
-.box6 {
-    grid-column: 9/-1;
-}
-
-.box7 {
-    grid-column: 1/7;
-}
-
-.box8 {
-    grid-column: 7/-1;
-}
-
-.box9 {
-    grid-column: 1/-1;
-}
-
-.box {
-    background-color: cornflowerblue;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+.main-nav {
+    grid-column: 2/11;
+    display: inline-block;
+    padding-right: 300px;
 }

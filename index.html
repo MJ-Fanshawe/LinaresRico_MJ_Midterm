@@ -11,30 +11,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Content will go here -->
 <div class="wrapper">
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>><a href="flavours.html">Flavours</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Buy Now</a></li>
-            </ul>
-        </nav>
-    </header>
+        <h1 class="hidden">Welcome to Dr.Nut Website!</h1>
 
-    <div class="box box3">Box3</div>
-    <div class="box box4">Box4</div>
-    <div class="box box5">Box5 has some extra content</div>
-    <div class="box box6">Box6</div>
-    <div class="box box7">Box7</div>
-    <div class="box box8">Box8</div>
-    <div class="box box9">Box9</div>
+        <section class="grid-con">
+            <h2 class="hidden">Top Navigation Menu</h2>
+
+            <div id="main-logo">
+                <a href="index.html"></a>
+                <img src="images/main_logo.svg" alt="Dr. Nut Main Logo">
+            </div>
+
+            <nav class="main-nav" class="grid-con">
+                <h3 class="hidden">Menu</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>><a href="flavours.html">Flavours</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Buy Now</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="button" id="buy-button">
+                Buy Now
+          </a>
+
+        </section>
+
+    </header>
 
 </div>
     <!-- Link to JS file at bottom, just before closing body tag -->
