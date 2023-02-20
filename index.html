@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Responsive 4 column Grid</title>
+    <title>Dr. Nut</title>
     <!-- Link to reset-->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Content will go here -->
-<div class="wrapper">
+    <h1 class="hidden">Welcome to Dr.Nut Website!</h1>
 
-    <header>
-        <h1 class="hidden">Welcome to Dr.Nut Website!</h1>
+    <div class="wrapper">
+        <header id="main-header" class="grid">
 
-        <section class="grid-con">
-            <h2 class="hidden">Top Navigation Menu</h2>
-
-            <div id="main-logo">
-                <a href="index.html"></a>
-                <img src="images/main_logo.svg" alt="Dr. Nut Main Logo">
+            <div id="bg-header" class="grid">
+                <a><img src="images/BG - rectangle.png" alt="bg"></a>
+                <nav id="main-nav-header">
+                    <h2 class="hidden">Main Navigation</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="flavours.html">Flavours</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div id="btn-header"><a href="#">BuyNOW</a></div>
+                </nav>
             </div>
 
-            <nav class="main-nav" class="grid-con">
-                <h3 class="hidden">Menu</h3>
+            <div id="icon-header" class="grid">
+                <img src="images/Grupo 4054.svg" alt="bg">
+            </div>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>><a href="flavours.html">Flavours</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Buy Now</a></li>
-                </ul>
-            </nav>
+        </header>
 
-            <a href="#" class="button" id="buy-button">
-                Buy Now
-          </a>
-
+        <section id="hero-con" class="grid">
+            <img id="main-hero" src="./images/text-hero.png" alt="text">
+            <img id="img-hero" src="./images/img-hero.svg" alt="text">
         </section>
 
-    </header>
+        <section id="about" class="grid">
+            <img id="face-section1" src="./images/squirrel-section1.png" alt="squirrel">
+            <img id="squirrel-box" src="./images/squirel-box.svg" alt="squirrel box text">
+            <p>"It's a food, not a fad"<br>A UNIQUE BLEND OF NUT FLAVIOR AND NATURAL INGREDIENTS.</p>
+            <img id="ingredients" src="./images/ingredients-section1.svg" alt="ingredients">
+        </section>
 
-</div>
+        <section id="product-con" class="grid">
+            <img id="recycle-bottle" src="./images/recycle.png" alt="recycle">
+        </section>
+
+        <section id="ad-img" class="grid">
+            <img id="ad-video" src="./images/video.png" alt="video">
+        </section>
+
+        <footer id="footer-con" class="grid">
+            <img id="con" src="./images/con-footer.png" alt="footer">
+        </footer>
+
+    </div>
     <!-- Link to JS file at bottom, just before closing body tag -->
     <script src="js/main.js"></script>
 </body>
 </html>
+
